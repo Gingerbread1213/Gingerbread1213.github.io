@@ -132,6 +132,34 @@ a:hover {
   line-height: 1.65;
 }
 
+.welcome {
+  margin: 0 0 0.9rem;
+  font-size: 1.2rem;
+}
+
+.content > p {
+  margin: 0 0 0.9rem;
+}
+
+.nested {
+  margin: 0.2rem 0 0;
+  padding-left: 1.2rem;
+}
+
+.nested > li + li {
+  margin-top: 0.7rem;
+}
+
+.nested ul {
+  margin: 0.25rem 0 0;
+  padding-left: 1.15rem;
+  list-style: circle;
+}
+
+.nested ul li + li {
+  margin-top: 0.15rem;
+}
+
 h2 {
   margin: 2.6rem 0 0.9rem;
   padding-bottom: 0.35rem;
