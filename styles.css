@@ -24,6 +24,8 @@ body {
   font-family: var(--serif);
   font-size: 1.0625rem;
   line-height: 1.6;
+  display: flex;
+  justify-content: center;
 }
 
 a {
@@ -36,9 +38,8 @@ a:hover {
 }
 
 .frame {
-  max-width: 52rem;
-  margin: 0 auto;
-  padding: 0 1.75rem 3.5rem;
+  width: min(70rem, 100%);
+  padding: 0 2.5rem 4rem;
 }
 
 .site-header {
@@ -311,6 +312,7 @@ h2:first-child {
 
 @media print {
   body {
+    display: block;
     background: white;
     font-size: 11pt;
   }
@@ -321,7 +323,7 @@ h2:first-child {
   }
 
   .frame {
-    max-width: none;
+    width: 100%;
     padding: 0;
   }
 
