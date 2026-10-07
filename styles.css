@@ -47,9 +47,17 @@ a:hover {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  padding: 2.75rem 1.75rem 2rem;
+  overflow-y: auto;
+  padding: 2rem 1.75rem 1.75rem;
   background: var(--side);
   border-right: 1px solid var(--line);
+}
+
+.portrait {
+  display: block;
+  width: 8.75rem;
+  height: auto;
+  margin: 0 0 1.1rem;
 }
 
 .name {
@@ -179,6 +187,28 @@ h2:first-child {
   margin: 0.15rem 0 0;
 }
 
+.courses {
+  margin: 0.75rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.courses li {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.courses li + li {
+  margin-top: 0.3rem;
+}
+
+.when {
+  flex: 0 0 auto;
+  color: var(--muted);
+  text-align: right;
+}
+
 .bullets,
 .papers {
   margin: 0.45rem 0 0;
@@ -217,10 +247,14 @@ h2:first-child {
     grid-template-columns: 1fr;
   }
 
+  .portrait {
+    width: 7.25rem;
+  }
+
   .sidebar {
     position: static;
     height: auto;
-    padding: 1.75rem 1.25rem 1.5rem;
+    padding: 1.5rem 1.25rem 1.35rem;
     border-right: 0;
     border-bottom: 1px solid var(--line);
   }
@@ -277,6 +311,13 @@ h2:first-child {
   .print-only h1 {
     margin: 0;
     font-size: 18pt;
+  }
+
+  .print-only img {
+    float: right;
+    width: 1.15in;
+    height: auto;
+    margin: 0 0 0.4rem 0.6rem;
   }
 
   .print-only p {
